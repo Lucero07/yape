@@ -1,0 +1,7 @@
+main .primera-pagina__carrusel {
+  height: 60vh !important;
+  color: red; }
+  main .primera-pagina__carrusel--primera-imagen p {
+    color: #8f8f8f; }
+  main .primera-pagina__carrusel--primera-imagen img {
+    width: 100%; }
