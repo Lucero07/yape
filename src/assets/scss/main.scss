@@ -1,0 +1,35 @@
+$Rojo-bullet:#f64552;
+$Gris-bullet:#f8f8f8;
+$Amarillo-botones:#fbd43b;
+$Grisdark:#212121;
+$Gris-letrasoft:#8f8f8f;
+$Turquesa-Terminos-condiciones:#00c3a3;
+$Morado-Entrada-Numeros:#49233b;
+$Moradolight:#451e36;
+$Moradodark:#38052a;
+
+main{
+	.primera-pagina{
+		&__carrusel{
+			height: 60vh !important;
+			color: red;
+			&--primera-imagen{
+				p{
+					color: $Gris-letrasoft;
+				}
+
+
+				img{
+					width: 100%;
+				}
+
+			}
+			&--segunda-imagen{
+
+			&--tercera-imagen{
+
+			}
+		}
+	}
+}
+}
