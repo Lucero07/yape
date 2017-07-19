@@ -11,7 +11,7 @@ const config = {
 const paths = {
 	html:'**/*.html',
 	sass:'assets/scss/**/*.SCSS',
-	mainSass: 'assets/scss/main.scss'
+	mainSass: 'assets/scss/*.scss'
 };
 const sources = {
 	assets:config.source + paths.assets,
@@ -37,6 +37,6 @@ console.log(sources.rootSass)
  gulp.task('js', () =>{
 	 gulp.src('src/assets/js/*.js')
 	 .pipe(browserify())
-	 .pipe(rename('bundle.js'))
 	 .pipe(gulp.dest('./public/assets/js'))
  });
+ gulp.task('actualizar',['js','html-cambios','sass']);

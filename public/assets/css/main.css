@@ -1,7 +1,21 @@
-main .primera-pagina__carrusel {
-  height: 60vh !important;
-  color: red; }
-  main .primera-pagina__carrusel--primera-imagen p {
+.primera-pagina {
+  margin-top: 10vh;
+  height: 90vh !important; }
+  .primera-pagina__carrusel {
+    height: 80vh !important;
     color: #8f8f8f; }
-  main .primera-pagina__carrusel--primera-imagen img {
-    width: 100%; }
+
+.primera-pagina div h2 {
+  font-size: 1.5rem; }
+
+.primera-pagina div p {
+  font-size: 1rem; }
+
+.boton__amarillo {
+  background-color: #fbd43b;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: .5%; }
+
+.contenedor {
+  background-color: red; }
