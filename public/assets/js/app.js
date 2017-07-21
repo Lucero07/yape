@@ -36,6 +36,8 @@ var api = {
 	 var aceptarTerminos = $("#filled-in-box:checked").is(':checked');
 	 location.href = 'validarCodigo.html';
 	 console.log(aceptarTerminos);
+	 localStorage.setItem( 'numeroUsuario',$inputRegistro.val());
+	 localStorage.setItem( 'aceptarTerminos',$("#filled-in-box:checked").is(':checked'));
 	 $.post(api.url,{
     	 'phone': numeroUsuario,
     	 'terms': aceptarTerminos,
@@ -43,8 +45,7 @@ var api = {
      }).then(function(response){
     	localStorage.setItem("telefono",response.data.phone);
 		localStorage.setItem("codigo",response.data.code);
-		// localStorage.setItem( 'numeroUsuario',$inputRegistro.val());
-		// localStorage.setItem( 'aceptarTerminos',$("#filled-in-box:checked").is(':checked'));
+
      }).catch(function(error){
     	 alert(error);
      });

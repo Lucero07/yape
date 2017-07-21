@@ -20,7 +20,7 @@ function comparandoCodigo() {
 	var codigoUsuario = $inputCodigo.val();
 	console.log(codigoReal);
 	console.log(codigoUsuario);
-	if( codigoUsuario.length === 6 ){
+	if( codigoUsuario.length === codigoReal.length ){
 		if(codigoUsuario == codigoReal){
 				location.href ='usuario.html';
 			console.log('hola');
