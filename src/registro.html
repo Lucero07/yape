@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
-		<div class="center resgistro row">
+		<div class="center row">
 	        <div class="col s10 offset-s1 m8 offset-m2">
 	            <div class="row">
 	                <div class="col s12 m10 offset-m1">
@@ -29,7 +29,7 @@
 	                <div class="col s12  m10 offset-m1">
 						<form action="" id="registro-form">
 	                            <h6 class="row">
-	                                <i class="material-icons">phonelink_ring</i> <span class="letragris"> (+52)</span> <span><input type="number" class="inputRegistro"></span>
+	                                <i class="material-icons">phonelink_ring</i> <span class="letragris"> (+52)</span> <span><input id="numero-usuario" type="number" data-length="10" class="inputRegistro"></span>
 								</h6>
 								<div>
 										<form action="#">
@@ -40,13 +40,14 @@
 										  </form>
 		  						    </div>
 		  						<div>
-		  						    <button type="submit" id="btn_registro" class="waves-effect btn btn_amarillo_registro" disabled>Subscribe</button>
-		  						  </div>
+		  						    <a id="btn_registro" class="waves-effect btn btn_amarillo_registro" disabled>Subscribe</a>
+		  						</div>
 						</form>
 	                </div>
 	            </div>
 	        </div>
 	    </div>
+
 
 
 
