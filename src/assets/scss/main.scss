@@ -1,35 +1,36 @@
-$Rojo-bullet:#f64552;
-$Gris-bullet:#f8f8f8;
-$Amarillo-botones:#fbd43b;
-$Grisdark:#212121;
-$Gris-letrasoft:#8f8f8f;
-$Turquesa-Terminos-condiciones:#00c3a3;
-$Morado-Entrada-Numeros:#49233b;
-$Moradolight:#451e36;
-$Moradodark:#38052a;
+@import "variables";
 
-main{
+
 	.primera-pagina{
-		&__carrusel{
-			height: 60vh !important;
-			color: red;
-			&--primera-imagen{
-				p{
-					color: $Gris-letrasoft;
-				}
+		margin-top: 10vh;
+		height: 90vh !important;
 
+		&__carrusel {
+			height: 80vh !important;
+			color: $Gris-letrasoft;
 
-				img{
-					width: 100%;
-				}
-
-			}
-			&--segunda-imagen{
-
-			&--tercera-imagen{
-
-			}
 		}
 	}
+
+.primera-pagina{
+	div{
+		h2{
+			font-size: 1.5rem;
+		}
+		p{
+			font-size: 1rem;
+		}
+	}
+
 }
+.boton{
+	&__amarillo{
+		   background-color: $Amarillo-botones;
+		   width: 100%;
+		   font-size: 1.5rem;
+		   padding: .5%;
+	}
+}
+.contenedor{
+	background-color: red
 }

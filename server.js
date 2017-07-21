@@ -14,10 +14,10 @@ const format = morganjson({
   'response-time': ':response-time ms'
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true })); //regresa un JSON
 app.use(bodyParser.json());
 app.use(express.static('public'));
-app.use(morgan(format));
+app.use(morgan(format)); //mostar los mensajes en consola con un formato
 
 //agregando ruta estatica
 app.use('/static', express.static(path.join(__dirname,'node_modules')));
@@ -26,7 +26,7 @@ app.use('/static', express.static(path.join(__dirname,'public')));
 let router = express.Router();
 
 router.get('/', (req, res) => {
-  res.json({ name: 'yape-api',version: "0.0.1"});
+ res.json({ name: 'yape-api',version: "0.0.1"});
  res.sendFile(__dirname + '/index.html');
 });
 
